@@ -2,8 +2,6 @@
 @import "mixins";
 @import "vars";
 @import "fonts";
-@import "content";
-//@import "resource/smart-grid";
 
 // ------------Main-----------------//
 body {
@@ -22,10 +20,14 @@ a {
 			color: $mcol-1;
 			text-decoration: underline;
 	}}
-.test {
-	font-family: cursive;
-	border-color: #5472AA;
-	}
+.tmenu{
+	display: block;
+	line-height: 2em;
+}
+p	{
+	color: #1A436F;
+	font-size: 1.5em;
+}
 
 // ------------h1, h2, h3, h4, h5, h6-----------------//
 h1 {
@@ -48,5 +50,5 @@ h6 {
 			}
 
 
-//@import "resource/smart-grid";
-//@import "media" // Всегда в конце */
+@import "content";
+@import "media"; // Всегда в конце */
