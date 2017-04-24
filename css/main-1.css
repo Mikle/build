@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Lora";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ClassicOne/Lora.eot");
+  src: url("../fonts/ClassicOne/Lora.eot?#iefix") format("embedded-opentype"), url("../fonts/ClassicOne/Lora.woff") format("woff"), url("../fonts/ClassicOne/Lora.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/ClassicOne/Lorabold.ttf.eot");
+  src: url("../fonts/ClassicOne/Lorabold.ttf.eot?#iefix") format("embedded-opentype"), url("../fonts/ClassicOne/Lorabold.ttf.woff") format("woff"), url("../fonts/ClassicOne/Lorabold.ttf.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-weight: italic;
+  font-style: normal;
+  src: url("../fonts/ClassicOne/Lorabolditalic.ttf.eot");
+  src: url("../fonts/ClassicOne/Lorabolditalic.ttf.eot?#iefix") format("embedded-opentype"), url("../fonts/ClassicOne/Lorabolditalic.ttf.woff") format("woff"), url("../fonts/ClassicOne/Lorabolditalic.ttf.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ClassicOne/Lora.eot");
+  src: url("../fonts/ClassicOne/Lora.eot?#iefix") format("embedded-opentype"), url("../fonts/ClassicOne/Lora.woff") format("woff"), url("../fonts/ClassicOne/Lora.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/ClassicOne/Lorabold.ttf.eot");
+  src: url("../fonts/ClassicOne/Lorabold.ttf.eot?#iefix") format("embedded-opentype"), url("../fonts/ClassicOne/Lorabold.ttf.woff") format("woff"), url("../fonts/ClassicOne/Lorabold.ttf.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-weight: italic;
+  font-style: normal;
+  src: url("../fonts/ClassicOne/Lorabolditalic.ttf.eot");
+  src: url("../fonts/ClassicOne/Lorabolditalic.ttf.eot?#iefix") format("embedded-opentype"), url("../fonts/ClassicOne/Lorabolditalic.ttf.woff") format("woff"), url("../fonts/ClassicOne/Lorabolditalic.ttf.ttf") format("truetype");
+}
+
+.wraper {
+  overflow: hidden;
+  padding: 10px 10px;
+}
+
+.cont {
+  background-color: #f2f2f7;
+  padding: 10px 10px;
+}
+
+.cont .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #fff;
+}
+
+.cont .row .item {
+  text-align: center;
+  margin: 10px 20px;
+  padding: 10px 10px;
+  background: #000;
+  border-right: 5px solid #fff;
+}
+
+.cont .row .item .in-item {
+  color: #00FFED;
+}
+
+.cont .row .item p {
+  text-transform: uppercase;
+  color: #CBFF9E;
+}
+
+body {
+  max-width: 1900px;
+  position: relative;
+  line-height: em(28);
+  font-family: Arial;
+  overflow-x: hidden;
+  opacity: 1;
+  color: #FFDB00;
+}
+
+a {
+  color: #FFDB00;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #FFDB00;
+  text-decoration: underline;
+}
+
+.test {
+  font-family: cursive;
+  border-color: #5472AA;
+}
+
+h1 {
+  color: #FFDB00;
+  font-family: "Lora", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 65px;
+  text-transform: none;
+}
+
+h2 {
+  color: #2c3948;
+  font-family: "Lora", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #FB4D36;
+  font-family: "Lora", sans-serif;
+  font-size: 26px;
+  font-weight: italic;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #31CD8f;
+  font-family: "Lora", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+h5 {
+  color: #FCFCFC;
+  font-family: "Lora", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+h6 {
+  color: #161616;
+  font-family: "Lora", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1100px) {
+  .cont .row .item {
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .cont .row .item {
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .cont .row .item {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+  a {
+    display: inline-block;
+    background-color: #b4b4b4;
+    font: 18px bold;
+  }
+
+  a:focus {
+    font: 2em normal;
+  }
+
+  a:hover {
+    font: 2em normal;
+  }
+}

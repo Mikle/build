@@ -1,0 +1,9 @@
+@import "mixins";
+
+$font-1: Arial;
+
+@include fontface("Lora", "../fonts/ClassicOne/Lora");
+$font-2: "Lora", sans-serif;
+
+@include fontface("Lora", "../fonts/ClassicOne/Lorabold.ttf", bold);
+@include fontface("Lora", "../fonts/ClassicOne/Lorabolditalic.ttf", italic);

@@ -1,0 +1,14 @@
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+  a {
+  	display: inline-block;
+  	background-color: #b4b4b4;
+  	font: 18px bold;
+  	&:focus {
+  		font: 2em normal;
+  	}
+  	&:hover {
+  		font: 2em normal;
+  	}
+  }
+}

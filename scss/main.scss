@@ -1,0 +1,52 @@
+//@import "bourbon";
+@import "mixins";
+@import "vars";
+@import "fonts";
+@import "content";
+//@import "resource/smart-grid";
+
+// ------------Main-----------------//
+body {
+	max-width: 1800px;
+	position: relative;
+	line-height: em(28);
+	font-family: $font-1;
+	overflow-x: hidden;
+	opacity: 1;
+	color: $mcol-1;
+	}
+a {
+	color: $mcol-1;
+	text-decoration: none;
+		&:hover, &:focus, &:active {
+			color: $mcol-1;
+			text-decoration: underline;
+	}}
+.test {
+	font-family: cursive;
+	border-color: #5472AA;
+	}
+
+// ------------h1, h2, h3, h4, h5, h6-----------------//
+h1 {
+	@include fonts($mcol-1, $font-2, 48px, bold, 65px, none);
+			}
+h2 {
+	@include fonts($mcol-2, $font-2, 30px, normal, 36px, uppercase);
+			}
+h3 {
+	@include fonts($mcol-3, $font-2, 26px, italic, 32px, uppercase);
+			}
+h4 {
+	@include fonts($mcol-4, $font-2, 22px, 500, 28px, uppercase);
+			}
+h5 {
+	@include fonts($mcol-5, $font-2, 16px, 500, 20px, uppercase);
+			}
+h6 {
+	@include fonts($mcol-6, $font-2, 12px, 500, 16px, uppercase);
+			}
+
+
+//@import "resource/smart-grid";
+//@import "media" // Всегда в конце */

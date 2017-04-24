@@ -1,0 +1,43 @@
+//@import "bourbon";
+@import "mixins";
+@import "vars";
+@import "fonts";
+@import "resource/smart-grid";
+
+
+.wraper {
+	overflow: hidden;
+	padding: 0px 0px;;
+}
+.cont {
+	background-color: #f2f2f7;
+	padding: 0px 0px;
+	.row {
+			display: flex;
+			flex-wrap: wrap ;
+			justify-content: center;
+			border: 1px solid #fff;
+		.item {@include col-slg-4();
+			@include col-lg-3();
+			@include col-md-4();
+			@include col-sm-5();
+			@include col-xs-12();
+			//min-width: 300px;
+			text-align: center;
+			//flex-grow: 1;
+			margin-top: 10px;
+			padding: 10px 10px;
+			background: #000; 
+			border-right: 5px solid #fff;
+			.in-item {
+				color: #00FFED;
+			}
+			p {
+				text-transform: uppercase;
+				color: #CBFF9E;
+			}
+		}
+	}
+}
+
+@import "media"; // Всегда в конце */
