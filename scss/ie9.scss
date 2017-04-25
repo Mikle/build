@@ -8,16 +8,20 @@
 	padding: 10px 10px;
 }
 .row {
-	@include row-flex();
+	@include row-float();
 	@include justify-content(center);
 	border: 3px solid #fff;
 }
 .item {
-	@include col-slg-3();
-	@include col-lg-3();
-	@include col-md-4();
-	@include col-sm-6();
-	@include col-xs-8();
+	@include col-float();
+	@include float-slg(3);
+	@include float-lg(3);
+	@include float-md(4);
+	@include float-sm(6);
+	@include float-xs(8);
+	/*&:nth-child(odd){
+		@include offset-left-slg(1);
+	};*/
 	//min-width: 300px;
 	text-align: center;
 	//flex-grow: 1;
@@ -25,7 +29,6 @@
 	padding: 10px 10px;
 	background: #277C31; 
 	border: 5px solid #fff;
-	border-radius: 20px;
 	&_text {
 		color: #00FFED;
 	}
@@ -34,5 +37,3 @@
 		color: #CBFF9E;
 	}
 }
-
-
