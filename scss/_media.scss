@@ -1,13 +1,12 @@
 
-@media screen and (max-width: 1800px) {
+@media screen and (min-width: 1200px) {
   a {
-  	display: inline-block;
-  	background-color: #FEF9C1;
-    color: #CA3456;
-  	font: 1.5rem bold;
-  	&:hover {
-  		background-color: #000;
-      color: #fff;
-  	}
-  }
+    text-decoration: none;
+    font-family: $font-2;
+    color: #D1076;
+    background-color: #fff;
+      &:hover, &:focus, &:active {
+        color: $mcol-1;
+        text-decoration: underline;
+    }}
 }

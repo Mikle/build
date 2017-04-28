@@ -1,7 +1,7 @@
 //@import "bourbon";
 //@import "mixins";
 //@import "vars";
-@import "resource/smart-grid";
+@import "resource/grid-1800-12";
 
 .cont {
 	background-color: #C2FB97;
@@ -10,7 +10,7 @@
 .row {
 	@include row-flex();
 	@include justify-content(center);
-	border: 3px solid #fff;
+	border: 5px solid #fff;
 }
 .item {
 	@include col-slg-3();
@@ -24,7 +24,7 @@
 	margin: 10px 10px;
 	padding: 10px 10px;
 	background: #277C31; 
-	border: 5px solid #fff;
+	border: 3px solid #fff;
 	border-radius: 20px;
 	&_text {
 		color: #00FFED;
