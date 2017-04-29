@@ -16,54 +16,17 @@ body {
 a {
 	color: $mcol-1;
 	text-decoration: none;
-	font-family: $font-3;
-	color: #000;
 		&:hover, &:focus, &:active {
 			color: $mcol-1;
 			text-decoration: underline;
 	}}
 .tmenu{
-	display: inline-block;
-	line-height: 1.5rem;
-	text-decoration: none;
-	ul {
-		background-color: #C6E0F1;
-		text-decoration: none;
-		font-family: $font-3;
-		color: #000;
-	}
+	display: block;
+	line-height: 2rem;
 }
 p	{
 	color: #1A436F;
 	font-size: 1.5rem;
-}
-.font1 {
-		font-family: $font-1;
-		color: #000;
-}
-.font2 {
-		font-family: $font-2;
-		color: #000; 
-}
-.font3 {
-		font-family: $font-3;
-		color: #000;
-}
-.font4 {
-		font-family: $font-4;
-		color: #000;
-}
-.font5 {
-		font-family: $font-5;
-		color: #000;
-}
-.font6 {
-		font-family: $font-6;
-		color: #000; 
-}
-.fontview {
-	font-size: 1.5rem;
-	line-height: 2rem;
 }
 
 // ------------h1, h2, h3, h4, h5, h6-----------------//
@@ -74,7 +37,7 @@ h2 {
 	@include fonts($mcol-2, $font-2, 1.75rem, normal, 2.25rem, uppercase);
 			}
 h3 {
-	@include fonts($mcol-3, $font-3, 1.5rem, normal, 2rem, uppercase);
+	@include fonts($mcol-3, $font-2, 1.5rem, italic, 2rem, uppercase);
 			}
 h4 {
 	@include fonts($mcol-4, $font-2, 1.25rem, 500, 1.75rem, uppercase);
