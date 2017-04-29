@@ -1,9 +1,16 @@
 @import "mixins";
 
-$font-1: Arial;
+@include font-face("Alight", "../fonts/A/Alight", $style: normal, $weight: normal);
+$font-1: "Alight";
+@include font-face("Aregular", "../fonts/A/Aregular", $style: normal, $weight: bold);
+$font-2: "Aregular";
+@include font-face("Abold", "../fonts/A/Abold", $style: italic, $weight: normal);
+$font-3: "Abold";
+@include font-face("Aitalic", "../fonts/A/Aitalic", $style: normal, $weight: normal);
+$font-4: "Aitalic";
+@include font-face("Acond", "../fonts/A/Acond", $style: normal, $weight: normal);
+$font-5: "Acond";
+@include font-face("Acondbold", "../fonts/A/Acondbold", $style: normal, $weight: 500);
+$font-6: "Acondbold";
 
-@include fontface("Lora", "../fonts/ClassicOne/Lora");
-$font-2: "Lora", sans-serif;
 
-@include fontface("Lora", "../fonts/ClassicOne/Lorabold.ttf", bold);
-@include fontface("Lora", "../fonts/ClassicOne/Lorabolditalic.ttf", italic);
