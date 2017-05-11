@@ -1,9 +1,13 @@
 //@import "bourbon";
+@import "reset";
 @import "mixins";
 @import "vars";
 @import "fonts";
 
 // ------------Main-----------------//
+* {
+	box-sizing: border-box;
+}
 body {
 	max-width: 1800px;
 	position: relative;
@@ -42,7 +46,7 @@ p	{
 		color: #000;
 }
 .font2 {
-		font-family: $font-2;
+		font-family: $font-3;
 		color: #000; 
 }
 .font3 {
