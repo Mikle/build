@@ -1,17 +1,24 @@
 @import "mixins";
 
 @include font-face("Alight", "../fonts/A/Alight", $style: normal, $weight: normal);
-$font-1: "Alight";
+$font-1: "Alight", sans-serif;
 @include font-face("Aregular", "../fonts/A/Aregular", $style: normal, $weight: bold);
-$font-2: "Aregular";
-/*@include font-face("Abold", "../fonts/A/Abold", $style: italic, $weight: normal);
-$font-3: "Abold";*/
+$font-2: "Aregular", sans-serif;
+@include font-face("Abold", "../fonts/A/Abold", $style: italic, $weight: normal);
+$font-3: "Abold", sans-serif;
 @include font-face("Aitalic", "../fonts/A/Aitalic", $style: normal, $weight: normal);
-$font-4: "Aitalic";
+$font-4: "Aitalic", sans-serif;
 @include font-face("Acond", "../fonts/A/Acond", $style: normal, $weight: normal);
-$font-5: "Acond";
+$font-5: "Acond", sans-serif;
 @include font-face("Acondbold", "../fonts/A/Acondbold", $style: normal, $weight: 500);
-$font-6: "Acondbold";
+$font-6: "Acondbold", sans-serif;
 
-@include font-face("Rusfontlit", "../fonts/Rusfont/Rusfontlit", $style: normal, $weight: normal);
-$font-3: "Rusfontlit";
+@include font-face("Rusfont", "../fonts/Rusfont/Rusfont", $style: normal, $weight: normal);
+$font-11: "Rusfont", sans-serif;
+@include font-face("Rusfontmed", "../fonts/Rusfont/Rusfontmed", $style: normal, $weight: medium);
+$font-22: "Rusfontmed", sans-serif;
+@include font-face("Rusfontlight", "../fonts/Rusfont/Rusfontlight", $style: italic, $weight: normal);
+$font-33: "Rusfontlight", sans-serif;
+@include font-face("Rusfontlit", "../fonts/Rusfont/Rusfontlit", $style: italic, $weight: normal);
+$font-44: "Rusfontlit", sans-serif;
+

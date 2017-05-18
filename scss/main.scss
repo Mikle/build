@@ -1,5 +1,5 @@
 //@import "bourbon";
-//@import "reset";
+@import "reset";
 @import "mixins";
 @import "vars";
 @import "fonts";
@@ -7,87 +7,134 @@
 // ------------Main-----------------//
 * {
 	box-sizing: border-box;
+	transition: 0.3s;
 }
 body {
-	max-width: 1800px;
-	position: relative;
-	line-height: 2rem;
+	background-image: url('../img/back.jpg');
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	max-width: 1200px;
+	margin: 0 auto;
+	line-height: 1.7rem;
 	font-family: $font-1;
 	overflow-x: hidden;
 	opacity: 1;
 	color: $mcol-1;
-	}
-a {
+	font-family: $font-2;
+}
+p {
+	padding: 1% 5% 0% 5%;
 	color: $mcol-1;
-	text-decoration: none;
-	font-family: $font-3;
-	color: #000;
-		&:hover, &:focus, &:active {
-			color: $mcol-1;
-			text-decoration: underline;
-	}}
-.tmenu{
+	text-transform: uppercase;
+	text-align: justify;
+}
+.p_in {
+	margin: 0 0 0 5%;
+}
+span {
+	padding: 2% 0 0 5%;
+	color: $mcol-1;
+}
+.header {
+	width: 100%;
+	height: 430px;
+	background-color: rgba(249, 243, 180, 0.8);
+	background-image: url("../img/top.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	@include frame(249, 243, 180, 0.8);
+}
+.top {
+	float: left;
+	width: 140px;
+	height: 140px;
+	margin: 10px;
+	padding: 5px 0;
+		background-color: #ff4848;
+		border-radius: 70px 70px;
+		box-shadow: inset 0 0 17px 1px #fff;
+}
+.top-nav {
 	display: inline-block;
-	line-height: 1.5rem;
+	float: right;
+	padding-left: 620px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	line-height: 60px;
+	a {
+	color: #fff;
 	text-decoration: none;
-	ul {
-		background-color: #C6E0F1;
-		text-decoration: none;
-		font-family: $font-3;
-		color: #000;
+	font-family: $font-33;
+		&:hover, &:focus, &:active {
+			color: $mcol-2;
+			text-decoration: none;
+		}
+	}
+	li {
+		display: block;
+		float: left;
+		text-align: center;
+		width: 140px;
+		height: 70px;
+		background-color: #ff4848;
+		border-radius: 0 0 70px 70px;
+		box-shadow: inset 0 0 15px 1px #fff;
+		&:hover, &:focus, &:active {
+			cursor: pointer;
+			color: #000;
+			background-color: #fff;
+			border-radius: 0 0 70px 70px;
+			box-shadow: inset 0 -3px 10px 1px #E5E5E5;
+			a {
+				color: #ff4848;
+			}
+		}
 	}
 }
-p	{
-	color: #1A436F;
-	font-size: 1.5rem;
+.spantxt {
+	float: left;
+	padding: 222px 0 0 0;
+	width: 100%;
+	text-align: center;
+	h1 {
+ 		@include frame(255,255,255,0.8);
+ 		border: 0px;
+	}
 }
-.font1 {
-		font-family: $font-1;
-		color: #000;
+.clearfix {
+	clear: both;
 }
-.font2 {
-		font-family: $font-3;
-		color: #000; 
-}
-.font3 {
-		font-family: $font-3;
-		color: #000;
-}
-.font4 {
-		font-family: $font-4;
-		color: #000;
-}
-.font5 {
-		font-family: $font-5;
-		color: #000;
-}
-.font6 {
-		font-family: $font-6;
-		color: #000; 
-}
-.fontview {
-	font-size: 1.5rem;
-	line-height: 2rem;
+.footer {
+	width: 100%;
+ 	@include frame(255,255,255, 0.95);
+	p {
+		padding: 2% 0 0 10%;
+		color: $mcol-1;
+	}
 }
 
 // ------------h1, h2, h3, h4, h5, h6-----------------//
 h1 {
-	@include fonts($mcol-1, $font-2, 2rem, bold, 2.5rem, none);
+	@include fonts($mcol-2, $font-33, 2rem, normal, 2.5rem);
 			}
 h2 {
-	@include fonts($mcol-2, $font-2, 1.75rem, normal, 2.25rem, uppercase);
+	@include fonts($mcol-2, $font-11, 1.75rem, normal, 2.25rem);
 			}
 h3 {
-	@include fonts($mcol-3, $font-3, 1.5rem, normal, 2rem, uppercase);
+	@include fonts($mcol-2, $font-22, 1.5rem, normal, 2rem);
 			}
 h4 {
-	@include fonts($mcol-4, $font-2, 1.25rem, 500, 1.75rem, uppercase);
+	@include fonts($mcol-1, $font-11, 1.25rem, 500, 1.75rem);
 			}
 h5 {
-	@include fonts($mcol-5, $font-2, 1rem, 500, 1.5rem, uppercase);
+	@include fonts($mcol-1, $font-2, 1rem, 500, 1.5rem);
 			}
 h6 {
-	@include fonts($mcol-6, $font-2, 0.75rem, 500, 1.25rem, uppercase);
+	@include fonts($mcol-1, $font-2, 0.75rem, 500, 1.25rem);
 			}
 
 
