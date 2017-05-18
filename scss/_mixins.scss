@@ -1,10 +1,10 @@
-@import "vars";
-@mixin fonts ($col, $ff, $fs, $fw, $lh) {
+@mixin fonts ($col, $ff, $fs, $fw, $lh, $tt) {
 	color: $col;
 	font-family: $ff;
 	font-size: $fs;
 	font-weight: $fw;
 	line-height: $lh;
+	text-transform: $tt;
 }
 
 @mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
@@ -19,9 +19,3 @@
     font-style: $style;
   }
 }
-
-@mixin frame($a,$b,$c, $clear) {
-    border: 1px solid #EDEDED;
-    background-color: rgba($a,$b,$c, $clear);
-    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5), inset 0 0 50px rgba(255, 255, 255, 0);
-} 
