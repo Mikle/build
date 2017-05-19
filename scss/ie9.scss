@@ -1,39 +1,6 @@
 //@import "bourbon";
 //@import "mixins";
 //@import "vars";
-@import "resource/grid-1800-12";
+@import "resource/grid-1200-12";
 
-.cont {
-	background-color: #C2FB97;
-	padding: 10px 10px;
-}
-.row {
-	@include row-float();
-	@include justify-content(center);
-	border: 3px solid #fff;
-}
-.item {
-	@include col-float();
-	@include float-slg(3);
-	@include float-lg(3);
-	@include float-md(4);
-	@include float-sm(6);
-	@include float-xs(8);
-	/*&:nth-child(odd){
-		@include offset-left-slg(1);
-	};*/
-	//min-width: 300px;
-	text-align: center;
-	//flex-grow: 1;
-	margin: 10px 10px;
-	padding: 10px 10px;
-	background: #277C31; 
-	border: 5px solid #fff;
-	&_text {
-		color: #00FFED;
-	}
-	p {
-		text-transform: uppercase;
-		color: #CBFF9E;
-	}
-}
+
