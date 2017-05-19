@@ -4,8 +4,9 @@
 @import "resource/grid-1200-12";
 
 .atla {
-  width: 100%;
-  height: 100%;
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
   	@include frame(153, 243, 153, 0.8);
 }
 .atlatxt {
@@ -15,16 +16,16 @@
 	text-transform: uppercase;
 }
 .flex-con {
-	margin: 1.5% 10%;
+	margin: 1% 10% 2% 10%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 }
 .flexli {
-	margin-right: 6%;
-	padding: 0.5% 1.5%;
-	width: 20%;
+	margin: 0 30px 0 0;
+	padding: 0 5px;
+	max-width: 190px;
 	@include frame(255, 255, 255, 1.0);
 	border-radius: 10px;
 	text-transform: uppercase;
@@ -42,6 +43,7 @@
 	h4 {
 		padding: 0 0 0 5%;
 		text-transform: uppercase;
+		color: $mcol-2;
 	}
 }
 .imp {
@@ -53,9 +55,14 @@
    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3)0%, #4FD3FC 100%, #aae9fe 100%);
 }
 .uslovia {
-	width: 100%;
+	max-width: 1200px;
 	height: 100%;
+	margin: 0 auto;
 	@include frame(249, 243, 180, 0.8);
+	span {
+	padding: 0 0 0 11%;
+	color: $mcol-1;
+}
 }
 
 
