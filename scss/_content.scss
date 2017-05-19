@@ -1,63 +1,38 @@
 //@import "bourbon";
-@import "mixins";
-@import "vars";
-@import "resource/grid-1200-12";
+//@import "mixins";
+//@import "vars";
+@import "resource/grid-1800-12";
 
-.atla {
-  width: 100%;
-  height: 100%;
-  	@include frame(153, 243, 153, 0.8);
+.cont {
+	background-color: #C2FB97;
+	padding: 10px 10px;
 }
-.atlatxt {
-	height: 100%;
-	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3) 0%, #76E576 100%, #99f399 100%);
+.row {
+	@include row-flex();
+	@include justify-content(center);
+	border: 5px solid #fff;
+}
+.item {
+	@include col-slg-3();
+	@include col-lg-3();
+	@include col-md-4();
+	@include col-sm-6();
+	@include col-xs-8();
+	//min-width: 300px;
 	text-align: center;
-	text-transform: uppercase;
-}
-.flex-con {
-	margin: 1.5% 10%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-}
-.flexli {
-	margin-right: 6%;
-	padding: 0.5% 1.5%;
-	width: 20%;
-	@include frame(255, 255, 255, 1.0);
-	border-radius: 10px;
-	text-transform: uppercase;
-	.img {
-		margin: 0 auto;
-		width: 100%;
+	//flex-grow: 1;
+	margin: 10px 10px;
+	padding: 10px 10px;
+	background: #277C31; 
+	border: 3px solid #fff;
+	border-radius: 20px;
+	&_text {
+		color: #00FFED;
 	}
-}
-.monotxt {
-	width: 80%;
-	margin: 1% 10% 2% 10%;
-	padding: 1% 0;
-	@include frame(255, 255, 255, 1.0);
-	border-radius: 10px;
-	h4 {
-		padding: 0 0 0 5%;
+	p {
 		text-transform: uppercase;
+		color: #CBFF9E;
 	}
 }
-.imp {
-	@extend .atla;
-		@include frame(170, 233, 254, 0.8);
-}
-.imptxt {
-	@extend .atlatxt;
-   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3)0%, #4FD3FC 100%, #aae9fe 100%);
-}
-.uslovia {
-	width: 100%;
-	height: 100%;
-	@include frame(249, 243, 180, 0.8);
-}
-
-
 
 
